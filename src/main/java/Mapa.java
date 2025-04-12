@@ -16,8 +16,8 @@ public class Mapa {
     private int backgroundOffset = 0;
     private int backgroundWidth = 800;
     private int backgroundHeight = 500;
-    private int mapMinusBorder = -5000;
-    private int mapPlusBorder = 5000;
+    private int mapMinusBorder = -3000;
+    private int mapPlusBorder = 3000;
     private ArrayList<Tile> tiles = new ArrayList<>();
     private ArrayList<Tree> trees = new ArrayList<>();
     private Random random = new Random();
