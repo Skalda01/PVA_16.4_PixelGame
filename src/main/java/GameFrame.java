@@ -65,15 +65,14 @@ public class GameFrame extends JPanel implements KeyListener {
 
     public void shoot() {
         Enemy closest = null;
-        int minDist = Integer.MAX_VALUE;
+
 
         for (Enemy enemy : enemies) {
             boolean isValidTarget = player.isFacingLeft() != enemy.isFacingLeft();
             int dist = player.getDistance(enemy);
 
-            if (isValidTarget && dist < shootRange && dist < minDist) {
+            if (isValidTarget && dist < shootRange) {
                 closest = enemy;
-                minDist = dist;
             }
         }
 
